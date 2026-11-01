@@ -3,424 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>개인정보처리방침 — 귤까기 | みかんむき</title>
+<title>개인정보처리방침 — 귤까기</title>
 <link rel="icon" type="image/png" href="/favicon-32.png">
 <style>
-:root {
-  --bg:#fff;
-  --fg:#191513;
-  --fg2:#6B625C;
-  --line:#EFEAE5;
-  --accent:#B04B0B;
-}
-@media (prefers-color-scheme:dark) {
-  :root {
-    --bg:#141110;
-    --fg:#F4EFEA;
-    --fg2:#B6ACA4;
-    --line:#2C2521;
-    --accent:#FFAE78;
-  }
-}
-[hidden] { display:none !important; }
-body {
-  margin:0;
-  background:var(--bg);
-  color:var(--fg);
-  font:16px/1.8 -apple-system,"Apple SD Gothic Neo",
-    "Hiragino Kaku Gothic ProN","Meiryo",
-    "Noto Sans KR","Noto Sans JP",sans-serif;
-  padding:0 16px;
-  overflow-wrap:anywhere;
-}
-main {
-  max-width:760px;
-  margin:0 auto;
-  padding:32px 0 80px;
-}
-nav {
-  display:flex;
-  gap:8px;
-  margin-bottom:28px;
-}
-nav button {
-  padding:8px 14px;
-  border:1px solid var(--line);
-  border-radius:999px;
-  background:var(--bg);
-  color:var(--fg2);
-  cursor:pointer;
-  font:inherit;
-}
-nav button[aria-pressed="true"] {
-  border-color:var(--accent);
-  color:var(--accent);
-  font-weight:700;
-}
-h1 { font-size:26px; margin:0 0 6px; }
-h2 { font-size:18px; margin:32px 0 8px; }
-p,li { color:var(--fg2); }
-.table-wrap { overflow-x:auto; }
-table {
-  width:100%;
-  border-collapse:collapse;
-  font-size:14px;
-}
-td,th {
-  border-bottom:1px solid var(--line);
-  padding:10px 8px;
-  text-align:left;
-  vertical-align:top;
-}
-a { color:var(--accent); }
-small { color:var(--fg2); }
+:root{--bg:#fff;--fg:#191513;--fg2:#6B625C;--line:#EFEAE5;--accent:#B04B0B}
+@media (prefers-color-scheme:dark){:root{--bg:#141110;--fg:#F4EFEA;--fg2:#B6ACA4;--line:#2C2521;--accent:#FFAE78}}
+[hidden]{display:none!important}nav{margin-bottom:24px}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 "Noto Sans KR","Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",-apple-system,"Apple SD Gothic Neo",sans-serif;padding:0 16px}
+main{max-width:680px;margin:0 auto;padding:40px 0 80px}h1{font-size:26px;margin:0 0 6px}h2{font-size:18px;margin:32px 0 8px}
+p,li{color:var(--fg2)}table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+a{color:var(--accent)}small{color:var(--fg2)}
 </style>
 </head>
+<body><main><nav aria-label="언어 / 言語"><a href="?lang=ko">한국어</a> | <a href="?lang=ja">日本語</a></nav><section id="policyKo" lang="ko">
+<h1>개인정보처리방침</h1>
+<small>시행일: 2026년 11월 1일</small>
+<p>귤까기(이하 "서비스", www.peelinggyul.site)은 이용자의 개인정보를 소중히 다루며, 「개인정보 보호법」 등 관련 법령을 지킵니다.</p>
 
-<body>
-<main>
-  <nav aria-label="언어 선택 / 言語選択">
-    <button type="button" id="btnKo" aria-pressed="true">
-      한국어
-    </button>
-    <button type="button" id="btnJa" aria-pressed="false">
-      日本語
-    </button>
-  </nav>
+<h2>1. 모으는 정보와 쓰는 곳</h2>
+<table>
+<tr><th>구분</th><th>항목</th><th>목적</th></tr>
+<tr><td>아이디 가입</td><td>아이디, 비밀번호(해시 처리하여 저장), 이메일</td><td>로그인, 가입 인증, 아이디·비밀번호 찾기 메일 발송</td></tr>
+<tr><td>카카오 로그인</td><td>카카오 회원 번호, 닉네임·프로필 사진·이메일(동의한 경우)</td><td>로그인, 화면에 이름 표시</td></tr>
+<tr><td>LINE 로그인</td><td>LINE 사용자 식별자, 표시 이름·프로필 사진</td><td>로그인, 화면에 이름 표시</td></tr>
+<tr><td>서비스 이용</td><td>귤 까기·연습 기록, 진피 서랍, 저장한 작품, 프로필(닉네임·소개·선호 품종), 선택한 팀·주간 점수, 콘테스트 출품작·투표, (선택) 인스타그램 아이디</td><td>기록 보관, 랭킹·콘테스트 운영</td></tr>
+</table>
+<p>로그인하지 않은 상태의 개인 게임 기록은 이용자 기기의 브라우저에 저장됩니다. 다만 선물 링크를 공유하거나 문의 메일을 보내는 등 직접 정보를 전송하는 기능을 사용하면 해당 정보가 전달됩니다. 로그인하면 기록과 프로필·저장 작품이 계정에 동기화됩니다.</p>
 
-  <!-- 한국어 -->
-  <section id="policyKo" lang="ko">
-    <h1>개인정보처리방침 🍊</h1>
-    <small>시행일: 2026년 11월 1일</small>
+<h2>2. 보관 기간</h2>
+<p>회원 탈퇴 시 계정과 서버에 저장된 기록, 출품작, 투표, 팀 점수를 지체 없이 지웁니다. 이 기기의 브라우저에 남은 기록은 별도로 지워야 합니다. 법령에 따라 보관해야 하는 정보가 있으면 그 기간 동안만 보관합니다.</p>
 
-    <p>
-      귤까기 | みかんむき(이하 “서비스”, www.peelinggyul.site)는
-      이용자의 개인정보를 소중히 다룹니다.
-    </p>
+<h2>3. 처리 위탁 및 국외 이전</h2>
+<p>서비스는 데이터 저장과 로그인 처리를 위해 Supabase Inc.의 클라우드를 사용합니다. 데이터는 Supabase 프로젝트를 만든 지역의 서버에 저장되며, 회원 정보와 이용 기록이 그곳으로 전송·보관됩니다. 위탁·이전을 원하지 않으면 로그인하지 않고 이용할 수 있습니다.</p>
 
-    <h2>1. 수집하는 정보와 이용 목적</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>구분</th>
-            <th>항목</th>
-            <th>목적</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>아이디 가입</td>
-            <td>아이디, 비밀번호(해시 처리하여 저장), 이메일</td>
-            <td>
-              회원가입 인증, 로그인,
-              아이디 확인 및 비밀번호 재설정
-            </td>
-          </tr>
-          <tr>
-            <td>카카오 로그인</td>
-            <td>
-              카카오 회원 번호,
-              동의한 경우 닉네임·프로필 사진·이메일
-            </td>
-            <td>
-              회원 식별, 로그인, 계정 관리,
-              화면에 이름 표시
-            </td>
-          </tr>
-          <tr>
-            <td>LINE 로그인</td>
-            <td>LINE 사용자 식별자, 표시 이름·프로필 사진</td>
-            <td>회원 식별, 로그인, 화면에 이름 표시</td>
-          </tr>
-          <tr>
-            <td>서비스 이용</td>
-            <td>
-              귤 까기 기록, 진피 서랍,
-              콘테스트 출품작·투표,
-              이용자가 선택하여 입력한 인스타그램 아이디
-            </td>
-            <td>기록 보관, 랭킹 및 콘테스트 운영</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<p>가입 인증 및 비밀번호 재설정 메일을 보내기 위해 Resend를 사용하며, 수신 이메일 주소와 메일 본문에 포함된 계정 정보·인증 링크를 발송 처리에 이용합니다.</p>
+<h2>4. 제3자 제공</h2>
+<p>이용자의 개인정보를 제3자에게 제공하지 않습니다. 콘테스트에 출품한 작품 이름·껍질 모양·점수, 출품 시의 닉네임과 직접 적은 인스타그램 아이디는 다른 이용자에게 공개됩니다. 팀 순위에는 팀별 합산 점수와 참여 인원수가 표시됩니다. 선물 링크를 공유하면 링크를 받은 사람이 선물과 직접 적은 이름·메시지를 볼 수 있습니다.</p>
 
-    <p>
-      로그인하지 않고 플레이한 기록은 이용자 기기의 브라우저에
-      저장됩니다. 로그인하면 기록을 계정과 연결하여
-      서버에 저장할 수 있습니다.
-    </p>
+<h2>5. 이용자의 권리</h2>
+<p>이용자는 언제든 자신의 정보를 확인·수정하거나 서비스 안의 "회원 탈퇴"로 삭제를 요청할 수 있습니다.</p>
 
-    <h2>2. 보관 기간과 삭제</h2>
-    <p>
-      회원 탈퇴 시 계정과 서버에 저장된 기록, 출품작, 투표를
-      삭제합니다. 법령에 따라 보관해야 하는 정보가 있다면
-      해당 기간 동안 보관합니다.
-      기기의 브라우저에 남은 기록은 서버 계정 삭제와 별도로
-      남을 수 있으며, 브라우저의 사이트 데이터 삭제 기능으로
-      지울 수 있습니다.
-    </p>
+<h2>6. 광고</h2>
+<p>서비스에 표시되는 광고 자리는 현재 광고 문의 안내이며, 광고를 위해 이용자 정보를 수집하지 않습니다. 맞춤형 광고를 도입하면 이 방침을 먼저 고쳐 알립니다.</p>
 
-    <h2>3. 외부 서비스 이용 및 데이터 처리</h2>
-    <p>
-      데이터 저장과 로그인 처리를 위해 Supabase의 클라우드를
-      사용합니다. 회원 정보와 이용 기록은 Supabase를 통해
-      처리되며, 데이터베이스는 운영자가 프로젝트 생성 시
-      선택한 지역에 저장됩니다.
-    </p>
-    <p>
-      가입 인증 및 비밀번호 재설정 메일 발송에는 Resend를
-      사용합니다. 수신 이메일 주소와 메일에 포함된 아이디 등
-      계정 정보, 인증·재설정 링크가 메일 발송 과정에서 처리됩니다.
-    </p>
-    <p>
-      카카오·LINE 로그인 이용 시 각 제공자의 인증 서비스를
-      거치며, 이용자가 동의한 정보가 서비스에 전달됩니다.
-    </p>
+<p>광고 문의를 보내면 직접 입력한 브랜드·회사 이름, 답장 받을 이메일, 문의 내용을 문의 응대에 사용합니다. 문의 메일은 이용자의 메일 앱을 통해 운영자에게 전송됩니다.</p>
+<h2>7. 문의</h2>
+<p>개인정보 보호 책임자: 운영자 · 이메일: <span id="contact">peelinggyul@gmail.com</span></p>
 
-    <h2>4. 정보 공개와 제3자 제공</h2>
-    <p>
-      위에 설명한 서비스 운영을 위한 외부 처리 외에,
-      이용자의 개인정보를 별도로 판매하거나 광고 목적으로
-      제공하지 않습니다. 콘테스트에 출품한 작품과 작품 이름,
-      이용자가 직접 입력한 인스타그램 아이디는
-      다른 이용자에게 공개됩니다.
-    </p>
-
-    <h2>5. 이용자의 권리</h2>
-    <p>
-      이용자는 자신의 개인정보에 대한 열람·정정·삭제 또는
-      처리 정지를 아래 문의 이메일로 요청할 수 있습니다.
-      계정 삭제는 서비스 안의 “회원 탈퇴”에서도 요청할 수 있습니다.
-    </p>
-
-    <h2>6. 광고</h2>
-    <p>
-      현재 광고 자리는 광고 문의 안내이며,
-      맞춤형 광고를 위한 별도 개인정보 수집은 하지 않습니다.
-      관련 처리 방식이 변경되면 이 방침에 반영하여 알립니다.
-    </p>
-
-    <h2>7. 문의</h2>
-    <p>
-      개인정보 관련 문의 및 권리 행사 담당: 운영자<br>
-      이메일:
-      <a href="mailto:peelinggyul@gmail.com">
-        peelinggyul@gmail.com
-      </a>
-    </p>
-
-    <p><a href="/" class="home-link">← 귤까기로 돌아가기</a></p>
-  </section>
-
-  <!-- 日本語 -->
-  <section id="policyJa" lang="ja" hidden>
-    <h1>プライバシーポリシー 🍊</h1>
-    <small>施行日：2026年11月1日</small>
-
-    <p>
-      みかんむき | 귤까기（以下「本サービス」、
-      www.peelinggyul.site）は、
-      利用者の個人情報を大切に取り扱います。
-    </p>
-
-    <h2>1. 収集する情報と利用目的</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>区分</th>
-            <th>情報</th>
-            <th>目的</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>ID登録</td>
-            <td>
-              ID、パスワード（ハッシュ化して保存）、
-              メールアドレス
-            </td>
-            <td>
-              登録認証、ログイン、
-              ID確認・パスワード再設定
-            </td>
-          </tr>
-          <tr>
-            <td>カカオログイン</td>
-            <td>
-              カカオのユーザー識別子、
-              同意した場合はニックネーム・
-              プロフィール画像・メールアドレス
-            </td>
-            <td>
-              利用者の識別、ログイン、
-              アカウント管理、画面上の名前表示
-            </td>
-          </tr>
-          <tr>
-            <td>LINEログイン</td>
-            <td>
-              LINEのユーザー識別子、
-              表示名・プロフィール画像
-            </td>
-            <td>利用者の識別、ログイン、画面上の名前表示</td>
-          </tr>
-          <tr>
-            <td>サービス利用</td>
-            <td>
-              みかんをむいた記録、陳皮のひきだし、
-              コンテスト作品・投票、
-              利用者が任意で入力したInstagramユーザー名
-            </td>
-            <td>
-              記録の保存、
-              ランキング・コンテストの運営
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p>
-      ログインせずにプレイした記録は、
-      利用者の端末のブラウザ内に保存されます。
-      ログインすると、記録をアカウントに紐付けて
-      サーバーに保存できます。
-    </p>
-
-    <h2>2. 保存期間と削除</h2>
-    <p>
-      退会時にアカウントとサーバー上の記録・作品・投票を
-      削除します。法令により保存が必要な情報は、
-      該当する期間保存します。
-      端末のブラウザ内の記録は、
-      サーバー上のアカウント削除後も残る場合があります。
-      ブラウザのサイトデータ削除機能から削除できます。
-    </p>
-
-    <h2>3. 外部サービスの利用とデータ処理</h2>
-    <p>
-      データ保存とログイン処理にはSupabaseのクラウドを
-      使用します。会員情報と利用記録はSupabaseを通じて
-      処理され、データベースは運営者がプロジェクト作成時に
-      選択した地域に保存されます。
-    </p>
-    <p>
-      登録認証・パスワード再設定メールの送信には
-      Resendを使用します。宛先メールアドレス、
-      本文に含まれるIDなどのアカウント情報、
-      認証・再設定リンクがメール送信の過程で処理されます。
-    </p>
-    <p>
-      カカオ・LINEログインでは各提供者の認証サービスを
-      利用し、利用者が同意した情報が本サービスに提供されます。
-    </p>
-
-    <h2>4. 情報の公開と第三者への提供</h2>
-    <p>
-      上記のサービス運営に必要な外部処理を除き、
-      個人情報を別途販売したり、
-      広告目的で提供したりすることはありません。
-      コンテストに投稿した作品・作品名、
-      利用者が自ら入力したInstagramユーザー名は
-      他の利用者に公開されます。
-    </p>
-
-    <h2>5. 利用者の権利</h2>
-    <p>
-      個人情報の開示・訂正・削除・利用停止は、
-      下記のメールアドレスから運営者へ申請できます。
-      アカウントの削除は、
-      サービス内の「退会」からも申請できます。
-    </p>
-
-    <h2>6. 広告</h2>
-    <p>
-      現在の広告枠は広告掲載のお問い合わせ案内であり、
-      パーソナライズ広告のための個人情報を
-      別途収集することはありません。
-      取り扱いが変更される場合は、
-      本ポリシーを更新してお知らせします。
-    </p>
-
-    <h2>7. お問い合わせ</h2>
-    <p>
-      個人情報に関するお問い合わせ・権利行使の担当：運営者<br>
-      メール：
-      <a href="mailto:peelinggyul@gmail.com">
-        peelinggyul@gmail.com
-      </a>
-    </p>
-
-    <p><a href="/" class="home-link">← みかんむきに戻る</a></p>
-  </section>
-</main>
-
-<script>
-(function () {
-  const ko = document.getElementById('policyKo');
-  const ja = document.getElementById('policyJa');
-  const btnKo = document.getElementById('btnKo');
-  const btnJa = document.getElementById('btnJa');
-
-  function setLanguage(lang, save) {
-    const isJa = lang === 'ja';
-
-    document.documentElement.lang = isJa ? 'ja' : 'ko';
-    ko.hidden = isJa;
-    ja.hidden = !isJa;
-
-    btnKo.setAttribute('aria-pressed', String(!isJa));
-    btnJa.setAttribute('aria-pressed', String(isJa));
-
-    document.title = isJa
-      ? 'プライバシーポリシー — みかんむき'
-      : '개인정보처리방침 — 귤까기';
-
-    if (save) {
-      try {
-        localStorage.setItem('gyul:lang', isJa ? 'ja' : 'ko');
-      } catch (e) {}
-    }
-  }
-
-  let lang = new URLSearchParams(location.search).get('lang');
-
-  if (lang !== 'ko' && lang !== 'ja') {
-    try {
-      lang = localStorage.getItem('gyul:lang');
-    } catch (e) {}
-  }
-
-  if (lang !== 'ko' && lang !== 'ja') {
-    lang = (navigator.language || '').toLowerCase().startsWith('ja')
-      ? 'ja'
-      : 'ko';
-  }
-
-  setLanguage(lang, false);
-
-  btnKo.addEventListener('click', function () {
-    setLanguage('ko', true);
-  });
-
-  btnJa.addEventListener('click', function () {
-    setLanguage('ja', true);
-  });
-
-  document.querySelectorAll('.home-link').forEach(function (link) {
-    link.addEventListener('click', function () {
-      try {
-        localStorage.setItem(
-          'gyul:lang',
-          document.documentElement.lang
-        );
-      } catch (e) {}
-    });
-  });
-})();
-</script>
-</body>
-</html>
+<p><a href="/?lang=ko">← 귤까기로 돌아가기</a></p>
+</section><section id="policyJa" lang="ja" hidden>
+<h1>プライバシーポリシー</h1><small>施行日：2026年11月1日</small>
+<p>みかんむき（以下「本サービス」、www.peelinggyul.site）は、利用者の個人情報を大切に取り扱い、韓国の「個人情報保護法」などの関連法令を遵守します。</p>
+<h2>1. 収集する情報と利用目的</h2>
+<table><tr><th>区分</th><th>情報</th><th>目的</th></tr>
+<tr><td>ID登録</td><td>ID、パスワード（ハッシュ化して保存）、メールアドレス</td><td>ログイン、登録認証、ID確認・パスワード再設定メールの送信</td></tr>
+<tr><td>カカオログイン</td><td>カカオのユーザー識別子、同意した場合はニックネーム・プロフィール画像・メールアドレス</td><td>ログイン、画面上の名前表示</td></tr>
+<tr><td>LINEログイン</td><td>LINEのユーザー識別子、表示名・プロフィール画像</td><td>ログイン、画面上の名前表示</td></tr>
+<tr><td>サービス利用</td><td>みかんむき・練習の記録、陳皮のひきだし、保存作品、プロフィール（ニックネーム・紹介・好きな品種）、選択したチーム・週間スコア、コンテスト作品・投票、任意で入力したInstagramユーザー名</td><td>記録の保存、ランキング・コンテストの運営</td></tr></table>
+<p>ログインしていない場合、個人のゲーム記録は端末のブラウザ内に保存されます。ただし、ギフトリンクの共有やお問い合わせメールの送信など、利用者が情報を送る機能を使うと、その情報が相手に伝わります。ログインすると記録・プロフィール・保存作品がアカウントに同期されます。</p>
+<h2>2. 保存期間</h2><p>退会時にアカウントとサーバー上の記録・作品・投票・チームスコアを遅滞なく削除します。端末のブラウザ内に残る記録は別途削除する必要があります。法令で保存が義務付けられた情報は、必要な期間のみ保存します。</p>
+<h2>3. 業務委託および国外への移転</h2><p>データ保存とログイン処理にSupabase Inc.のクラウドを使用します。会員情報と利用記録は、Supabaseプロジェクトで選択した地域のサーバーに送信・保存されます。この処理を希望しない場合は、ログインせずに利用できます。</p>
+<p>登録認証・パスワード再設定メールの送信にはResendを使用し、宛先メールアドレスと本文に含まれるアカウント情報・認証リンクを送信処理に利用します。</p>
+<h2>4. 第三者への提供</h2><p>個人情報を第三者に提供しません。ただし、コンテストの作品名・皮の形・スコア、参加時のニックネームと任意で入力したInstagramユーザー名は、他の利用者に公開されます。チーム順位にはチームごとの合計スコアと参加人数が表示されます。ギフトリンクを共有すると、受け取った人がギフトと入力された名前・メッセージを閲覧できます。</p>
+<h2>5. 利用者の権利</h2><p>利用者はいつでも自身の情報の確認・修正、またはサービス内の「退会」から削除を申請できます。</p>
+<h2>6. 広告</h2><p>現在の広告枠は広告掲載のお問い合わせ案内であり、広告のための利用者情報は収集しません。パーソナライズ広告を導入する場合は、事前に本ポリシーを改定してお知らせします。</p>
+<p>広告についてのお問い合わせでは、入力されたブランド・会社名、返信先メールアドレス、問い合わせ内容を返信対応に利用します。メールは利用者のメールアプリから運営者へ送信されます。</p>
+<h2>7. お問い合わせ</h2><p>個人情報保護責任者：運営者 ／ メール：<span>peelinggyul@gmail.com</span></p>
+<p><a href="/?lang=ja">← みかんむきに戻る</a></p></section></main><script>
+let lang=new URLSearchParams(location.search).get('lang');
+if(lang!=='ko'&&lang!=='ja'){try{lang=localStorage.getItem('gyul:lang');}catch(e){}}
+if(lang!=='ko'&&lang!=='ja')lang=(navigator.language||'').startsWith('ja')?'ja':'ko';
+try{localStorage.setItem('gyul:lang',lang);}catch(e){}
+document.documentElement.lang=lang;
+document.getElementById('policyKo').hidden=lang==='ja';
+document.getElementById('policyJa').hidden=lang!=='ja';
+document.title=lang==='ja'?'プライバシーポリシー — みかんむき':'개인정보처리방침 — 귤까기';
+</script></body></html>
