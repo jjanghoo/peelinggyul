@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>오늘의 귤 — 하루 한 개, 한 줄로 까 보세요</title>
+<title>오늘의 귤 · 今日のみかん — 하루 한 개, 한 줄로 까 보세요</title>
 <meta name="description" content="하루에 귤 하나가 와요. 3D 귤을 손끝으로 천천히, 한 줄로 까 보세요. 깐 껍질은 말려서 진피 서랍에 모여요.">
 <link rel="canonical" href="https://www.peelinggyul.site/">
 <meta name="theme-color" content="#EA6410">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="오늘의 귤">
-<meta property="og:title" content="오늘의 귤">
+<meta property="og:site_name" content="오늘의 귤 · 今日のみかん">
+<meta property="og:title" content="오늘의 귤 · 今日のみかん">
 <meta property="og:description" content="하루에 귤 하나. 손끝으로 천천히, 한 줄로 까 보세요.">
 <meta property="og:url" content="https://www.peelinggyul.site/">
 <meta property="og:image" content="https://www.peelinggyul.site/og.png">
@@ -908,7 +908,7 @@ function el_has(n,k){return n[k+'_o']!=null;}
 const i18nObs=new MutationObserver(list=>{if(LANG!=='ja')return;for(const r of list){if(r.type==='characterData')i18nText(r.target);
   else if(r.type==='attributes')i18nEl(r.target);else r.addedNodes.forEach(i18nWalk);}});
 function loadJaFont(){if(document.getElementById('jaFont'))return;const l=document.createElement('link');l.id='jaFont';l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;800&display=swap';document.head.appendChild(l);}
-function applyLang(){if(LANG==='ja')loadJaFont();const root=document.body;document.documentElement.lang=LANG;document.title=T('오늘의 귤');
+function applyLang(){if(LANG==='ja')loadJaFont();const root=document.body;document.documentElement.lang=LANG;document.title=LANG==='ja'?'今日のみかん · 오늘의 귤':'오늘의 귤 · 今日のみかん';
   if(LANG==='ja'){i18nWalk(root);i18nObs.observe(root,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:I18N.attrs});}
   else{i18nObs.disconnect();i18nRestore(root);}
   const b=document.getElementById('langBtn');if(b){b.dataset.lang=LANG;b.setAttribute('aria-label',LANG==='ja'?'言語を切り替え（いまは日本語）':'언어 바꾸기 (지금은 한국어)');}}
@@ -3184,7 +3184,7 @@ try{syncTabs(current||'home');}catch(e){}
 $('#meDrawer').onclick=()=>go('drawer');$('#meWorks').onclick=()=>go('works');$('#meDict').onclick=()=>{DC.tab='dex';go('dict');};
 
 $('#menuAdmin').onclick=openAdmin;
-(function freshCheck(){if(!ON_SITE)return;const BUILD='1793605662';setTimeout(async()=>{try{const r=await fetch(location.pathname,{method:'HEAD',cache:'no-store'});const e=r.headers.get('etag')||r.headers.get('last-modified');if(!e)return;
+(function freshCheck(){if(!ON_SITE)return;const BUILD='1793606181';setTimeout(async()=>{try{const r=await fetch(location.pathname,{method:'HEAD',cache:'no-store'});const e=r.headers.get('etag')||r.headers.get('last-modified');if(!e)return;
   const st=store('gyul:build')||{};if(st.b===BUILD&&st.e&&st.e!==e&&sessionStorage.getItem('gyul:rl')!==e){sessionStorage.setItem('gyul:rl',e);track('stale_reload');setTimeout(()=>location.reload(),300);return;}
   store('gyul:build',{b:BUILD,e});}catch(x){}},1500);})();
 (function warm(){const idle=f=>('requestIdleCallback' in window)?requestIdleCallback(f,{timeout:4000}):setTimeout(f,2500);let go_=false;const start=()=>{if(go_)return;go_=true;setTimeout(()=>idle(run),300);};addEventListener('pointerdown',start,{once:true,passive:true});setTimeout(start,2500);

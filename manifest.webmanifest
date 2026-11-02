@@ -1,7 +1,7 @@
 {
-  "name": "귤까기 | みかんむき",
-  "short_name": "귤까기",
-  "description": "하루 한 개, 한 줄로 까 보세요。毎日ひとつ、ひと続きにむいてみよう。",
+  "name": "오늘의 귤 · 今日のみかん",
+  "short_name": "오늘의 귤",
+  "description": "하루 한 개, 한 줄로 까 보세요",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
